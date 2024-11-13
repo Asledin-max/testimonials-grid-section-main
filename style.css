@@ -124,10 +124,10 @@ body {
   }
 }
 
-@media (min-width: 395px) and (max-width: 770px) {
+@media (min-width: 395px) and (max-width: 1023px) {
   .cardcontainer-grid {
     grid-template-columns: repeat(4, 1fr);
-    width: min(95%, 770px);
+    width: min(95%, 1204px);
   }
   .grid-col-span-2 {
     grid-column: span 3;
@@ -151,7 +151,14 @@ body {
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .cardcontainer-grid {
+    grid-template-columns: repeat(4, 1fr);
+    width: min(95%, 1200px);
+  }
+}
+
+@media (min-width: 1440px) {
   .cardcontainer-grid {
     grid-template-columns: repeat(4, 1fr);
     width: min(95%, 1200px);
