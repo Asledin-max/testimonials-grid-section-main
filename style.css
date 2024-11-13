@@ -100,10 +100,10 @@ body {
   padding: 25px 26px 35px 30px;
 }
 
-@media (min-width: 380px) {
+@media (min-width: 395px) {
   .cardcontainer-grid {
     grid-template-columns: repeat(4, 1fr);
-    width: min(95%, 1280px);
+    width: min(95%, 400px);
   }
   .grid-col-span-2 {
     grid-column: span 2;
@@ -121,5 +121,39 @@ body {
 
   .testimonials h2 {
     font-size: 22px;
+  }
+}
+
+@media (min-width: 395px) and (max-width: 770px) {
+  .cardcontainer-grid {
+    grid-template-columns: repeat(4, 1fr);
+    width: min(95%, 770px);
+  }
+  .grid-col-span-2 {
+    grid-column: span 3;
+  }
+  .testimonials:last-child {
+    grid-row: 3;
+    grid-column: span 2;
+  }
+  .testimonials:nth-child(1) {
+    grid-column: span 4;
+  }
+  .testimonials:nth-child(2) {
+    grid-column: span 2;
+  }
+  .testimonials:nth-child(3) {
+    grid-column: span 2;
+  }
+  .testimonials:nth-child(4) {
+    grid-column: span 2;
+    grid-row-start: 3;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .cardcontainer-grid {
+    grid-template-columns: repeat(4, 1fr);
+    width: min(95%, 1200px);
   }
 }
